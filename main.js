@@ -63,7 +63,7 @@ function renderTasks() {
 
 
 function startButtonHandler(id) {
-    time = 15 * 60; 
+    time = 5; 
     current = id;
     const taskIndex = tasks.findIndex((task) => task.id === id);
     
@@ -100,7 +100,7 @@ function timeHandler(id) {
     }
 
     function startBreak() {
-        time = 3 * 60;
+        time = 3;
         taskName.textContent = 'Break';
         renderTime();
         timerbreak = setInterval(() => {
